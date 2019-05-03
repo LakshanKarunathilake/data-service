@@ -1,0 +1,14 @@
+{
+  "name": "data-service",
+  "version": "1.0.0",
+  "description": "Data service for a rest api",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "lakshankarunathilake",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
