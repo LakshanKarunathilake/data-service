@@ -1,0 +1,16 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: data-service-deployment
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels: # labels to select/identify the deployment
+        app: data-service
+    spec: # pod spec
+      containers:
+        - name: data-service
+          image: gcr.io/docker-239515/data-service # image we pushed
+          ports:
+            - containerPort: 3001
